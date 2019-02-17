@@ -6,17 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crytstal Game</title>
     
+    <!-- <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css"> -->
+
+
 </head>
 <body>
-    <h1>Crystal Collector</h1>
-    <div class="howToPlay">
-        <p>You will be given a random number at the start of the game.</p>
-        <p>There are four character pictures below. By clicking on a character you will add a specific amount of points to your total score.</p>
-        <p>You win the game by matching your total score the random number. You lose the game if your score goes above the random number.</p>
-        <p>The value of each character is hidden until you click on it.</p>
-        <p>Each time the game starts, a new random target number is selected and the values of each character will change.</p>
-        <h2>Good Luck!</h2>
+    <div>
+        <div class="headerTitle">
+            <h1>Crystal Collector</h1>
+        </div>
+
+        <div class="howToPlay">
+            <p>You will be given a random number at the start of the game.</p>
+            <p>There are four character pictures below. By clicking on a character you will add a specific amount of points to your total score.</p>
+            <p>You win the game by matching your total score the random number. You lose the game if your score goes above the random number.</p>
+            <p>The value of each character is hidden until you click on it.</p>
+            <p>Each time the game starts, a new random target number is selected and the values of each character will change.</p>
+            <h2>Good Luck!</h2>
+        </div>
+
+        <div class="targetNum">
+
+        </div>
+
+        <div class="winLossTracker">
+            <p id="wins">Wins: 0</p>
+            <p id="losses">Losses: 0</p>
+        </div>
+
+        <div class="characters">
+
+        </div>
+
+        <div class="playersTally">
+            <p>Your Score is: </p>
+
+            <div class="playerScore">
+
+            </div>
+        </div>
     </div>
     <script src="assets/javascript/game.js"></script>
+    
 </body>
 </html>

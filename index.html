@@ -6,48 +6,87 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crytstal Game</title>
     
-    <!-- <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css"> -->
-
+    <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 <body>
     <div>
-        <div class="headerTitle">
-            <h1>Crystal Collector</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm headerTitle">
+                    <h1>Crystal Collector</h1>
+                </div>
+            </div>
+        </div>
+        
+        <br>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm howToPlay">
+                    <p>You will be given a random number at the start of the game.</p>
+                    <p>There are four character pictures below. By clicking on a character you will add a specific amount of points to your total score.</p>
+                    <p>You win the game by matching your total score the random number. You lose the game if your score goes above the random number.</p>
+                    <p>The value of each character is hidden until you click on it.</p>
+                    <p>Each time the game starts, a new random target number is selected and the values of each character will change.</p>
+                    <h2>Good Luck!</h2>
+                </div>
+            </div>
         </div>
 
-        <div class="howToPlay">
-            <p>You will be given a random number at the start of the game.</p>
-            <p>There are four character pictures below. By clicking on a character you will add a specific amount of points to your total score.</p>
-            <p>You win the game by matching your total score the random number. You lose the game if your score goes above the random number.</p>
-            <p>The value of each character is hidden until you click on it.</p>
-            <p>Each time the game starts, a new random target number is selected and the values of each character will change.</p>
-            <h2>Good Luck!</h2>
+        <br>
+
+        <div class="container scoreBox">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h3 id="targetNum">Target Number: 00</h3>
+                </div>
+        
+                <div class="col-sm-3 winLossTracker">
+                    <h3 id="wins">Wins: 00</h3>
+                </div>
+                        
+                <div class="col-sm-3">
+                    <h3 id="losses">Losses: 00</h3>
+                </div>
+                
+                    
+
+                <div class="col-sm-3 playersTally">
+                    <h3 id="playerScore">Your Score is: 00</h3>
+                </div>
+            </div>
         </div>
 
-        <div class="targetNum">
+        <br>
 
-        </div>
+        <div class="container characters">
+            <div class="row">
+                <div class="col-sm-3">
+                    <img src="assets/images/Apppose.png" class="card-img apprentice" alt="Huntress">
+                </div>
 
-        <div class="winLossTracker">
-            <p id="wins">Wins: 0</p>
-            <p id="losses">Losses: 0</p>
-        </div>
+                <div class="col-sm-3">
+                    <img src="assets/images/Huntresspose.png" class="card-img huntress" alt="Huntress">
+                </div>
 
-        <div class="characters">
+                <div class="col-sm-3">
+                    <img src="assets/images/Monkpose.png" class="card-img" alt="Huntress">
+                </div>
 
-        </div>
-
-        <div class="playersTally">
-            <p>Your Score is: </p>
-
-            <div class="playerScore">
-
+                <div class="col-sm-3">
+                    <img src="assets/images/Squirepose.png" class="card-img squire" alt="Huntress">
+                </div>
             </div>
         </div>
     </div>
+
     <script src="assets/javascript/game.js"></script>
-    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </body>
 </html>

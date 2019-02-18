@@ -3,29 +3,27 @@ $(document).ready(function(){
     // var targetNumber = Math.floor(Math.random() * 100);
     var imageOneNumber = 0;
     var playScore = 0;
-
+    var targetMin = 20;
+    var targetMax = 50;
+    var minNumber = 1;
+    var maxNumber = 10;
 
     // Function that randomly generates and sets the target value at the start of a new game.
     function setTarget() {
-        var minNumber = 20;
-        var maxNumber = 50;
-        var targetNumber = Math.floor(Math.random() * (maxNumber - minNumber + 1) + minNumber);
+        var targetNumber = Math.floor(Math.random() * (targetMax - targetMin + 1) + targetMin);
         $("#targetNum").text("Target Number: " + targetNumber);
-    }
+    };
 
     // Function that randomly generates and sets the value of each image at the start of a new game.
     function imageOneValue() {
-        var minNumber = 1;
-        var maxNumber = 10;
         imageOneNumber = Math.floor(Math.random() * (maxNumber - minNumber + 1) + minNumber);
-        // $("#playerScore").text("Player's Score: " + imageNumber);
-        // $("#apprentice").attr(imageNumber);
-    }
+    };
+
 
     // Function to add to the player tally by the assigned image value when an image is clicked
     $("#image1").click(function(){
-        
-        $("#playerScore").text("Player's Score: " + (playScore + imageOneNumber));
+        playScore = playScore + imageOneNumber;
+        $("#playerScore").text("Player's Score: " + playScore);
         
     });
 

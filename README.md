@@ -7,7 +7,7 @@ Crystal Game
 
 ## Technology
 * Bootstrap, HTML5, CSS, JavaScript, jQuery
-* Live demo: https://github.com/boogeybum/unit-4-game.git
+* Live demo: https://boogeybum.github.io/unit-4-game/
 
 ## About
 * The Crystal Game is about assigning random values to button elements, in this case images, that you then click to determine the elements number value and click to add to your score while trying to have your clicked value equal the value of the random generated target number without going over. After each game the random values reset within a pre-determined range and the wins or losses values are updated to reflect the outcome of the previous game. The wins and losses values reset to zero if the browser is reloaded.
